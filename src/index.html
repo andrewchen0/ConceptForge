@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ConceptForge</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- KaTeX css for rendering LaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  </head>
+
+  <body>
+    <main id="start-screen">
+      <section class="menu">
+        <h1 class="menu-title">ConceptForge</h1>
+        <button class="menu-button" id="start-button">Start Chat</button>
+      </section>
+    </main>
+    <main id="chat-screen">
+      <section class="chat-header">
+        <h1 class="chat-title">ConceptForge</h1>
+        <button class="back-button" id="chat-back">Back</button>
+      </section>
+      <div class="messages-container" id="chat-container"></div>
+      <section class="chat-input">
+        <input type="text" class="chat-input-field" id="user-input" placeholder="Type your message here..." />
+        <button id="generate-scenario-button" class="scenario-button">Generate Scenario</button>
+        <button class="chat-button" id="send-button">Send</button>
+      </section>
+      <template id="message-template-user">
+        <div class="message-user">
+          <span class="message-text-user"></span>
+        </div>
+      </template>
+      <template id="message-template-bot">
+        <div class="message-bot">
+          <span class="message-text-bot"></span>
+        </div>
+      </template>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="renderer.js"></script>
+  </body>
+</html>
