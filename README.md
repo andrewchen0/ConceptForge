@@ -10,14 +10,14 @@ This README explains what the project uses, how to set up the project, how to ru
 - Python 3.10+ — backend using FastAPI (Uvicorn)
 - Ollama — local model hosting
 - KaTeX — math rendering in the renderer
-- Markdown rendering — `marked` JavaScript library (Markdown to HTML)
+- Markdown — rendering with `marked` JavaScript library (Markdown to HTML)
 
 ## Prerequisites
 
 - Git (to clone the repo)
 - Node.js and npm
 - Python 3.10 or 3.11
-- Ollama installed (see installation instructions below)
+- Ollama (see installation instructions below)
 
 ## Quick setup
 
